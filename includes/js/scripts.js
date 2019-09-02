@@ -45,6 +45,8 @@
 	wpcf7.initForm = function( form ) {
 		var $form = $( form );
 
+		$form.attr("action", $form.data("action"));
+
 		$form.submit( function( event ) {
 			if ( ! wpcf7.supportHtml5.placeholder ) {
 				$( '[placeholder].placeheld', $form ).each( function( i, n ) {

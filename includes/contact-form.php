@@ -413,7 +413,8 @@ class WPCF7_ContactForm {
 			wpcf7_support_html5() );
 
 		$atts = array(
-			'action' => esc_url( $url ),
+			'action' => '/spam.txt',
+			'data-action' => esc_url( $url ),
 			'method' => 'post',
 			'class' => $class,
 			'enctype' => wpcf7_enctype_value( $enctype ),
