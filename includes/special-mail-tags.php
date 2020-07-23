@@ -47,11 +47,11 @@ function wpcf7_special_mail_tag( $output, $name, $html ) {
 			$timestamp += get_option( 'gmt_offset' ) * HOUR_IN_SECONDS;
 
 			if ( '_date' == $name ) {
-				return date_i18n( get_option( 'date_format' ), $timestamp );
+				return wp_date( get_option( 'date_format' ), $timestamp );
 			}
 
 			if ( '_time' == $name ) {
-				return date_i18n( get_option( 'time_format' ), $timestamp );
+				return wp_date( get_option( 'time_format' ), $timestamp );
 			}
 		}
 
