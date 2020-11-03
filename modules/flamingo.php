@@ -256,6 +256,7 @@ function wpcf7_flamingo_update_channel( $contact_form ) {
 	}
 }
 
+
 add_filter( 'wpcf7_special_mail_tags', 'wpcf7_flamingo_serial_number', 10, 4 );
 
 /**
