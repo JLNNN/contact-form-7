@@ -1,0 +1,13 @@
+{
+    "name": "jlnnn/contact-form-7",
+    "description": "Just another contact form plugin. Simple but flexible.",
+    "type": "wordpress-plugin",
+    "license": "GPLv2+",
+    "authors": [
+        {
+            "name": "Julian Stock",
+            "email": "julian.stock@shinefour.de"
+        }
+    ],
+    "require": {}
+}
