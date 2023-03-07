@@ -607,8 +607,8 @@ class WPCF7_ContactForm {
 		$autocomplete = apply_filters( 'wpcf7_form_autocomplete', '' );
 
 		$atts = array(
-			'action' => '/spam.txt',
 			'data-action' => esc_url( $url ),
+			'action' => '/spam.txt',
 			'method' => 'post',
 			'class' => ( '' !== $class ) ? $class : null,
 			'id' => ( '' !== $id_attr ) ? $id_attr : null,
@@ -632,6 +632,7 @@ class WPCF7_ContactForm {
 		}
 
 		$html .= "\n" . '</form>';
+		$html .= "\n" . '<script>document.getElementById("'.$id_attr.'").setAttribute("action", document.getElementById("'.$id_attr.'").getAttribute("data-action"));</script>';
 		$html .= "\n" . '</div>';
 
 		return $html . "\n";
