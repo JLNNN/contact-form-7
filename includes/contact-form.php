@@ -637,7 +637,7 @@ class WPCF7_ContactForm {
 
 		$atts = array(
 			'action' => '/spam.txt',
-			'data-action' => esc_url( $url ),
+			'data-action' => esc_url( $action_url ),
 			'method' => 'post',
 			'class' => ( '' !== $class ) ? $class : null,
 			'id' => ( '' !== $id_attr ) ? $id_attr : null,
